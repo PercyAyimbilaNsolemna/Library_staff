@@ -42,6 +42,11 @@ def gender(self, gender):
 @property
 def city(self):
     return self._city
+
+@city.setter
+def city(self, city):
+    self._city = city
+
     
 
 
