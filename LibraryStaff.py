@@ -30,6 +30,10 @@ def rank(self):
 @rank.setter
 def rank(self, rank):
     self._rank = rank
-     
+
+@property
+def gender(self):
+    return self._gender
+
 
 
