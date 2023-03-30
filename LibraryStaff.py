@@ -67,4 +67,8 @@ def salary(self, salary):
 def sanctions(self):
     return self.sanctions
 
+@sanctions.setter
+def sanctions(self, sanctions):
+    self._sanctions = sanctions
+
     
