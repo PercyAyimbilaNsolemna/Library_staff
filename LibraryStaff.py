@@ -19,3 +19,9 @@ def __str__(self):
 def full_name(self):
     return self._full_name
 
+@full_name.setter
+def full_name(self, full_name):
+    self._full_name = full_name
+    
+
+
