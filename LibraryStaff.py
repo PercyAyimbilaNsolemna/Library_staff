@@ -80,3 +80,7 @@ def year_of_employment(self):
 @year_of_employment.setter
 def year_of_employment(self, year_of_employment):
     self._year_of_employment = year_of_employment
+
+@property
+def department(self):
+    return self._department
