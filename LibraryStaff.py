@@ -76,4 +76,7 @@ def sanctions(self, sanctions):
 def year_of_employment(self):
     return self._year_of_employment
 
-    
+
+@year_of_employment.setter
+def year_of_employment(self, year_of_employment):
+    self._year_of_employment = year_of_employment
