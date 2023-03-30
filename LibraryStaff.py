@@ -35,5 +35,9 @@ def rank(self, rank):
 def gender(self):
     return self._gender
 
+@gender.setter
+def gender(self, gender):
+    self._gender = gender
+    
 
 
