@@ -12,4 +12,8 @@ class LibraryStaff:
         self.city = city
         self.region = region
 
+def __str__(self):
+    return "This is a libary staff class"
+
+
 
