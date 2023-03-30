@@ -47,6 +47,8 @@ def city(self):
 def city(self, city):
     self._city = city
 
-    
+@property
+def region(self):
+    return self._region  
 
 
