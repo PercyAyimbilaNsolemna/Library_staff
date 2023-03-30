@@ -84,3 +84,7 @@ def year_of_employment(self, year_of_employment):
 @property
 def department(self):
     return self._department
+
+@department.setter
+def department(self, department):
+    self._department = department
