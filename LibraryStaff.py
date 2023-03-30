@@ -71,4 +71,9 @@ def sanctions(self):
 def sanctions(self, sanctions):
     self._sanctions = sanctions
 
+
+@property 
+def year_of_employment(self):
+    return self._year_of_employment
+
     
