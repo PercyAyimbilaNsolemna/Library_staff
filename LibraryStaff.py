@@ -59,6 +59,8 @@ def region(self, region):
 def salary(self):
     return self._salary
 
-    
+@salary.setter
+def salary(self, salary):
+    self._salary = salary
 
 
