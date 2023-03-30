@@ -27,5 +27,9 @@ def full_name(self, full_name):
 def rank(self):
     return self._rank
  
+@rank.setter
+def rank(self, rank):
+    self._rank = rank
+     
 
 
