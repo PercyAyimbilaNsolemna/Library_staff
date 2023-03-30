@@ -51,4 +51,8 @@ def city(self, city):
 def region(self):
     return self._region  
 
+@region.setter
+def region(self, region):
+    self._region = region
+
 
