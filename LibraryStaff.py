@@ -38,6 +38,10 @@ def gender(self):
 @gender.setter
 def gender(self, gender):
     self._gender = gender
+
+@property
+def city(self):
+    return self._city
     
 
 
