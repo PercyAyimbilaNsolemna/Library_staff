@@ -63,4 +63,8 @@ def salary(self):
 def salary(self, salary):
     self._salary = salary
 
+@property
+def sanctions(self):
+    return self.sanctions
 
+    
