@@ -22,6 +22,10 @@ def full_name(self):
 @full_name.setter
 def full_name(self, full_name):
     self._full_name = full_name
-    
+
+@property 
+def rank(self):
+    return self._rank
+ 
 
 
