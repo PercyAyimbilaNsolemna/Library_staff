@@ -15,5 +15,7 @@ class LibraryStaff:
 def __str__(self):
     return "This is a libary staff class"
 
-
+@property
+def full_name(self):
+    return self._full_name
 
