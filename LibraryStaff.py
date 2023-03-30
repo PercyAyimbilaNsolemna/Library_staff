@@ -55,4 +55,10 @@ def region(self):
 def region(self, region):
     self._region = region
 
+@property
+def salary(self):
+    return self._salary
+
+    
+
 
