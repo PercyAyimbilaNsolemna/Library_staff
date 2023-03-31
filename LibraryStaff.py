@@ -20,7 +20,12 @@ class LibraryStaff:
     
     #Creates a method to check the number of years the employess has been in the job
     def years_on_job(self):
-        
+        x = datetime.datetime.now()
+        year = x.year
+        #m = type(year)
+        self.year_of_employment = int(self.year_of_employment)
+        years_on_the_job = year - self.year_of_employment
+        return years_on_the_job
 
     @property
     def full_name(self):
@@ -159,6 +164,8 @@ def main():
 
     libraryStaff.region = "Greater Accra"
     print(f"{libraryStaff.full_name}'s region: {libraryStaff.region}")
+
+    print(libraryStaff.years_on_job())
 
 if __name__ == "__main__":
     main()
