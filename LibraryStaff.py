@@ -1,3 +1,5 @@
+import datetime
+
 class LibraryStaff:
     def __init__(self, full_name=None, year_of_employment=None, staffID=None, rank=None, gender=None, department=None, salary=None, year_of_birth=None, awards=None, sanctions=None, city=None, region=None):
         self.full_name = full_name
@@ -15,6 +17,10 @@ class LibraryStaff:
 
     def __str__(self):
         return "This is a libary staff class"
+    
+    #Creates a method to check the number of years the employess has been in the job
+    def years_on_job(self):
+        
 
     @property
     def full_name(self):
