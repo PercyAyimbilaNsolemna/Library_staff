@@ -23,9 +23,16 @@ class LibraryStaff:
         x = datetime.datetime.now()
         self.year = x.year
         #m = type(year)
-        self.year_of_employment = int(self.year_of_employment)
-        years_on_the_job = self.year - self.year_of_employment
-        return years_on_the_job
+        self.year_of_employment_int = int(self.year_of_employment)
+        self.years_on_the_job = self.year - self.year_of_employment
+        return f"{self.full_name} has been a staff of the library for the past {self.years_on_the_job} years"
+    
+    #Creates a method to calculate the age of the employee
+    def age(self):
+        self.year_of_birth_int = int(self.year_of_birth)
+        self.age = self.year - self.year_of_birth_int
+        return f"{self.full_name} is {self.age} years old"
+
 
     @property
     def full_name(self):
@@ -166,6 +173,8 @@ def main():
     print(f"{libraryStaff.full_name}'s region: {libraryStaff.region}")
 
     print(libraryStaff.years_on_job())
+
+    print(libraryStaff.age())
 
 if __name__ == "__main__":
     main()
