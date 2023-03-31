@@ -22,6 +22,23 @@ class LibraryStaff:
     @full_name.setter
     def full_name(self, full_name):
         self._full_name = full_name
+    
+    @property 
+    def year_of_employment(self):
+        return self._year_of_employment
+
+
+    @year_of_employment.setter
+    def year_of_employment(self, year_of_employment):
+        self._year_of_employment = year_of_employment
+    
+    @property
+    def staffID(self):
+        return self._staffID
+
+    @staffID.setter
+    def staffID(self, staffID):
+        self._staffID = staffID
 
     @property 
     def rank(self):
@@ -38,6 +55,38 @@ class LibraryStaff:
     @gender.setter
     def gender(self, gender):
         self._gender = gender
+    
+    @property
+    def department(self):
+        return self._department
+
+    @department.setter
+    def department(self, department):
+        self._department = department
+    
+    @property
+    def salary(self):
+        return self._salary
+
+    @salary.setter
+    def salary(self, salary):
+        self._salary = salary
+    
+    @property
+    def year_of_birth(self):
+        return self._year_of_birth
+    
+    @year_of_birth.setter
+    def year_of_birth(self, year_of_birth):
+        self._year_of_birth = year_of_birth
+    
+    @property
+    def sanctions(self):
+        return self.sanctions
+
+    @sanctions.setter
+    def sanctions(self, sanctions):
+        self._sanctions = sanctions
 
     @property
     def city(self):
@@ -54,53 +103,14 @@ class LibraryStaff:
     @region.setter
     def region(self, region):
         self._region = region
-
-    @property
-    def salary(self):
-        return self._salary
-
-    @salary.setter
-    def salary(self, salary):
-        self._salary = salary
-
-    @property
-    def sanctions(self):
-        return self.sanctions
-
-    @sanctions.setter
-    def sanctions(self, sanctions):
-        self._sanctions = sanctions
-
-
-    @property 
-    def year_of_employment(self):
-        return self._year_of_employment
-
-
-    @year_of_employment.setter
-    def year_of_employment(self, year_of_employment):
-        self._year_of_employment = year_of_employment
-
-    @property
-    def department(self):
-        return self._department
-
-    @department.setter
-    def department(self, department):
-        self._department = department
-
-    @property
-    def staffID(self):
-        return self._staffID
-
-    @staffID.setter
-    def staffID(self, staffID):
-        self._staffID = staffID
+ 
 
 def main():
     libraryStaff = LibraryStaff()
-
     print(libraryStaff)
+
+    libraryStaff.full_name = "Dennis Agbo"
+    print(libraryStaff.full_name)
 
 if __name__ == "__main__":
     main()
