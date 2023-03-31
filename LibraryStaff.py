@@ -86,12 +86,12 @@ class LibraryStaff:
         return self._awards
     
     @awards.setter
-    def awards(self, awards*):
+    def awards(self, awards):
         self._awards = awards
     
     @property
     def sanctions(self):
-        return self.sanctions
+        return self._sanctions
 
     @sanctions.setter
     def sanctions(self, sanctions):
@@ -143,7 +143,16 @@ def main():
     print(f"{libraryStaff.full_name}'s year of birth: {libraryStaff.year_of_birth}")
 
     libraryStaff.awards = "Best librarian of the year"
-    print(f"{libraryStaff.full_name}'s award: {libraryStaff.award}")
+    print(f"{libraryStaff.full_name}'s award: {libraryStaff.awards}")
+
+    libraryStaff.sanctions = "No sanctions"
+    print(f"{libraryStaff.full_name} sanctions: {libraryStaff.sanctions}")
+
+    libraryStaff.city = "Accra"
+    print(f"{libraryStaff.full_name}'s city: {libraryStaff.city}")
+
+    libraryStaff.region = "Greater Accra"
+    print(f"{libraryStaff.full_name}'s region: {libraryStaff.region}")
 
 if __name__ == "__main__":
     main()
