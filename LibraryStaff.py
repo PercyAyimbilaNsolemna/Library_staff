@@ -32,6 +32,12 @@ class LibraryStaff:
         self.year_of_birth_int = int(self.year_of_birth)
         self.age = self.year - self.year_of_birth_int
         return f"{self.full_name} is {self.age} years old"
+    
+    #Creates a method that calculates the number of years left for the employee to retire
+    def years_to_retire(self):
+        self.retirement_age = 60
+        self.years_to_retire = self.retirement_age - self.age
+        return f"{self.full_name} has {self.years_to_retire} years to retire"
 
 
     @property
@@ -175,6 +181,8 @@ def main():
     print(libraryStaff.years_on_job())
 
     print(libraryStaff.age())
+
+    print(libraryStaff.years_to_retire())
 
 if __name__ == "__main__":
     main()
