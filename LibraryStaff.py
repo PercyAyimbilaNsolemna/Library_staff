@@ -89,6 +89,12 @@ class LibraryStaff:
     def department(self, department):
         self._department = department
 
+    @property
+    def staffID(self):
+        return self._staffID
+
+    
+
 def main():
     libraryStaff = LibraryStaff()
 
