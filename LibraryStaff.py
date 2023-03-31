@@ -12,79 +12,79 @@ class LibraryStaff:
         self.city = city
         self.region = region
 
-def __str__(self):
+    def __str__(self):
     return "This is a libary staff class"
 
-@property
-def full_name(self):
-    return self._full_name
+    @property
+    def full_name(self):
+        return self._full_name
 
-@full_name.setter
-def full_name(self, full_name):
-    self._full_name = full_name
+    @full_name.setter
+    def full_name(self, full_name):
+        self._full_name = full_name
 
-@property 
-def rank(self):
-    return self._rank
+    @property 
+    def rank(self):
+        return self._rank
  
-@rank.setter
-def rank(self, rank):
-    self._rank = rank
+    @rank.setter
+    def rank(self, rank):
+        self._rank = rank
 
-@property
-def gender(self):
-    return self._gender
+    @property
+    def gender(self):
+        return self._gender
 
-@gender.setter
-def gender(self, gender):
-    self._gender = gender
+    @gender.setter
+    def gender(self, gender):
+        self._gender = gender
 
-@property
-def city(self):
-    return self._city
+    @property
+    def city(self):
+        return self._city
 
-@city.setter
-def city(self, city):
-    self._city = city
+    @city.setter
+    def city(self, city):
+        self._city = city
 
-@property
-def region(self):
-    return self._region  
+    @property
+    def region(self):
+        return self._region  
 
-@region.setter
-def region(self, region):
-    self._region = region
+    @region.setter
+    def region(self, region):
+        self._region = region
 
-@property
-def salary(self):
-    return self._salary
+    @property
+    def salary(self):
+        return self._salary
 
-@salary.setter
-def salary(self, salary):
-    self._salary = salary
+    @salary.setter
+    def salary(self, salary):
+        self._salary = salary
 
-@property
-def sanctions(self):
-    return self.sanctions
+    @property
+    def sanctions(self):
+        return self.sanctions
 
-@sanctions.setter
-def sanctions(self, sanctions):
-    self._sanctions = sanctions
-
-
-@property 
-def year_of_employment(self):
-    return self._year_of_employment
+    @sanctions.setter
+    def sanctions(self, sanctions):
+        self._sanctions = sanctions
 
 
-@year_of_employment.setter
-def year_of_employment(self, year_of_employment):
-    self._year_of_employment = year_of_employment
+    @property 
+    def year_of_employment(self):
+        return self._year_of_employment
 
-@property
-def department(self):
-    return self._department
 
-@department.setter
-def department(self, department):
-    self._department = department
+    @year_of_employment.setter
+    def year_of_employment(self, year_of_employment):
+        self._year_of_employment = year_of_employment
+
+    @property
+    def department(self):
+        return self._department
+
+    @department.setter
+    def department(self, department):
+        self._department = department
