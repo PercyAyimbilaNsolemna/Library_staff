@@ -2,7 +2,7 @@ class LibraryStaff:
     def __init__(self, full_name=None, year_of_employment=None, staffID=None, rank=None, gender=None, department=None, salary=None, year_of_birth=None, sanctions=None, city=None, region=None):
         self.full_name = full_name
         self.year_of_employment = year_of_employment
-        self.staffID = staff_ID
+        self.staffID = staffID
         self.rank = rank
         self.gender = gender
         self.department = department
@@ -13,7 +13,7 @@ class LibraryStaff:
         self.region = region
 
     def __str__(self):
-    return "This is a libary staff class"
+        return "This is a libary staff class"
 
     @property
     def full_name(self):
@@ -88,3 +88,11 @@ class LibraryStaff:
     @department.setter
     def department(self, department):
         self._department = department
+
+def main():
+    libraryStaff = LibraryStaff()
+
+    print(libraryStaff)
+
+if __name__ == "__main__":
+    main()
