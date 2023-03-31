@@ -1,5 +1,5 @@
 class LibraryStaff:
-    def __init__(self, full_name=None, year_of_employment=None, staffID=None, rank=None, gender=None, department=None, salary=None, year_of_birth=None, sanctions=None, city=None, region=None):
+    def __init__(self, full_name=None, year_of_employment=None, staffID=None, rank=None, gender=None, department=None, salary=None, year_of_birth=None, awards=None, sanctions=None, city=None, region=None):
         self.full_name = full_name
         self.year_of_employment = year_of_employment
         self.staffID = staffID
@@ -8,6 +8,7 @@ class LibraryStaff:
         self.department = department
         self.salary = salary
         self.year_of_birth = year_of_birth
+        self.awards = awards
         self.sanctions = sanctions
         self.city = city
         self.region = region
@@ -110,7 +111,31 @@ def main():
     print(libraryStaff)
 
     libraryStaff.full_name = "Dennis Agbo"
-    print(libraryStaff.full_name)
+    print(f"Full name of staff: {libraryStaff.full_name}")
+
+    libraryStaff.year_of_employment = 2019
+    print(f"Staff year of employment: {libraryStaff.year_of_employment}")
+
+    libraryStaff.staffID = "10239855"
+    print(f"{libraryStaff.full_name}'s staff ID: {libraryStaff.staffID}")
+
+    libraryStaff.rank = "Secretary"
+    print(f"{libraryStaff.full_name}'s rank: {libraryStaff.rank}")
+
+    libraryStaff.gender = "Male"
+    print(f"Gender: {libraryStaff.gender}")
+
+    libraryStaff.department = "CS"
+    print(f"Department: {libraryStaff.department}")
+
+    libraryStaff.salary = 2300
+    print(f"{libraryStaff.full_name}'s salary: ${libraryStaff.salary}")
+
+    libraryStaff.year_of_birth = "2006"
+    print(f"{libraryStaff.full_name}'s year of birth: {libraryStaff.year_of_birth}")
+
+    libraryStaff.awards = "Best librarian of the year"
+    print(f"{libraryStaff.full_name}'s award: {libraryStaff.award}")
 
 if __name__ == "__main__":
     main()
