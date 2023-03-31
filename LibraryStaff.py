@@ -80,6 +80,10 @@ class LibraryStaff:
     @year_of_birth.setter
     def year_of_birth(self, year_of_birth):
         self._year_of_birth = year_of_birth
+
+    @property
+    def awards(self):
+        return self._awards
     
     @property
     def sanctions(self):
