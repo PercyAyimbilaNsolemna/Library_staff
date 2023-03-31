@@ -85,6 +85,10 @@ class LibraryStaff:
     def awards(self):
         return self._awards
     
+    @awards.setter
+    def awards(self, awards*):
+        self._awards = awards
+    
     @property
     def sanctions(self):
         return self.sanctions
