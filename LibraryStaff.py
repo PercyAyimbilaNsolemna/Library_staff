@@ -21,10 +21,10 @@ class LibraryStaff:
     #Creates a method to check the number of years the employess has been in the job
     def years_on_job(self):
         x = datetime.datetime.now()
-        year = x.year
+        self.year = x.year
         #m = type(year)
         self.year_of_employment = int(self.year_of_employment)
-        years_on_the_job = year - self.year_of_employment
+        years_on_the_job = self.year - self.year_of_employment
         return years_on_the_job
 
     @property
