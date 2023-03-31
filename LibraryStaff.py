@@ -93,7 +93,9 @@ class LibraryStaff:
     def staffID(self):
         return self._staffID
 
-    
+    @staffID.setter
+    def staffID(self, staffID):
+        self._staffID = staffID
 
 def main():
     libraryStaff = LibraryStaff()
